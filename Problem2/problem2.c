@@ -2,6 +2,7 @@
 #include <stdlib.h>
 int main(int argc, char *argv[])
 {
+	//convert string into float number...
 	float number ;
 	int i;
 	if(argc == 1)
