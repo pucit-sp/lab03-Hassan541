@@ -26,8 +26,7 @@ int  main(int argc,char *argv[])
 {
 
 
-	/*	creating variables	
-*/
+	/*	creating variables	*/
 
 	int behaviour;
 	FILE *fp;
@@ -37,7 +36,7 @@ int  main(int argc,char *argv[])
 
 	/*	check if mygrep is called or myreplace	
 */
-	if(/*	check if the name of executable is mygrep	*/ )
+	if(/* check if the name of executable is mygrep */ )
 	{
 		if(argc != 3)
 		{
