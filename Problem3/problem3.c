@@ -32,11 +32,14 @@ int  main(int argc,char *argv[])
 	FILE *fp;
 	char *filename=argv[1];
 	char *find=argv[2];
-	char * replace;
+	char * replace=argv[3];
 
+	char *grep = "mygrep";
+	char *rep = "myreplace";
 	/*	check if mygrep is called or myreplace	
 */
-	if(/* check if the name of executable is mygrep */ )
+//	if(/* check if the name of executable is mygrep */ )
+	if(strcmp(filename,grep) == 0 )
 	{
 		if(argc != 3)
 		{
@@ -46,7 +49,8 @@ int  main(int argc,char *argv[])
 
 		behaviour = GREP;
 	}
-	else if(/*	check if the name of executable is myreplace	*/)
+//	else if(/*	check if the name of executable is myreplace	*/)
+	else if(strcmp(filename,rep) == 0)
 	{
 		if(argc != 4)
 		{
@@ -64,7 +68,7 @@ int  main(int argc,char *argv[])
 
 
 	/* opening file	
-*/
+*/	
 
 	fp=fopen(filename,"rt");
 
